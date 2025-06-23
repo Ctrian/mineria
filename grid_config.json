@@ -1,0 +1,105 @@
+{
+  "frame_dimensions": {
+    "width": 120,
+    "height": 120
+  },
+  "zones": [
+    {
+      "id": "caja",
+      "name": "\u00c1rea de Cajas",
+      "x1": 0,
+      "y1": 0,
+      "x2": 30,
+      "y2": 40,
+      "color": [
+        128,
+        128,
+        128
+      ],
+      "priority": 1,
+      "max_capacity": 15,
+      "category": "caja"
+    },
+    {
+      "id": "electronica",
+      "name": "Electr\u00f3nicos",
+      "x1": 30,
+      "y1": 0,
+      "x2": 60,
+      "y2": 60,
+      "color": [
+        255,
+        100,
+        0
+      ],
+      "priority": 1,
+      "max_capacity": 15,
+      "category": "electronica"
+    },
+    {
+      "id": "ropa",
+      "name": "Ropa",
+      "x1": 60,
+      "y1": 0,
+      "x2": 90,
+      "y2": 60,
+      "color": [
+        255,
+        0,
+        255
+      ],
+      "priority": 1,
+      "max_capacity": 15,
+      "category": "ropa"
+    },
+    {
+      "id": "comida",
+      "name": "Comida",
+      "x1": 90,
+      "y1": 0,
+      "x2": 120,
+      "y2": 60,
+      "color": [
+        0,
+        255,
+        0
+      ],
+      "priority": 1,
+      "max_capacity": 15,
+      "category": "comida"
+    },
+    {
+      "id": "hogar",
+      "name": "Hogar",
+      "x1": 0,
+      "y1": 60,
+      "x2": 60,
+      "y2": 120,
+      "color": [
+        100,
+        255,
+        100
+      ],
+      "priority": 1,
+      "max_capacity": 15,
+      "category": "hogar"
+    },
+    {
+      "id": "jardin",
+      "name": "Jard\u00edn",
+      "x1": 60,
+      "y1": 60,
+      "x2": 120,
+      "y2": 120,
+      "color": [
+        0,
+        200,
+        0
+      ],
+      "priority": 1,
+      "max_capacity": 15,
+      "category": "jardin"
+    }
+  ],
+  "created_at": "\"2025-06-23T07:10:59\""
+}

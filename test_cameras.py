@@ -70,8 +70,5 @@ def main():
         print(f"❌ Solo se encontraron {len(available_cameras)} cámara(s): {available_cameras}")
         print("❌ Se necesitan al menos 2 cámaras para el sistema dual")
     
-    print(f"\n💡 Tip: En Windows, la webcam integrada suele ser índice 0")
-    print(f"💡 Tip: Las webcams USB externas suelen ser índices 1, 2, etc.")
-
 if __name__ == "__main__":
     main()
