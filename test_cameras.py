@@ -70,5 +70,29 @@ def main():
         print(f"❌ Solo se encontraron {len(available_cameras)} cámara(s): {available_cameras}")
         print("❌ Se necesitan al menos 2 cámaras para el sistema dual")
     
+
+def test_camera(index):
+    """Prueba una cámara específica"""
+    print(f"Probando cámara {index}...")
+    cap = cv2.VideoCapture(index)
+    
+    if not cap.isOpened():
+        print(f"❌ No se pudo abrir la cámara {index}")
+        return False
+    
+    # Obtener información de la cámara
+    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    
+    print(f"✅ Cámara {index} disponible:")
+    print(f"   - Resolución: {width}x{height}")
+    print(f"   - FPS: {fps}")
+    print(f"   - Rango máximo de coordenadas: x=0..{width-1}, y=0..{height-1}")
+    
+    # Mostrar video por 5 segundos
+    print(f"   - Mostrando video de cámara {index} (presiona 'q' para siguiente cámara)")
+    # ...código existente...
+
 if __name__ == "__main__":
     main()
